@@ -1,0 +1,163 @@
+/* GENERAL */
+
+body {
+  font-family: "IBM Plex Sans";
+  font-size: 14px;
+}
+
+.wrapper {
+  width: 1200px;
+  margin: 0px auto;
+  display: flex;
+}
+
+h1 {
+  font-family: "Stratos Deliveroo Web";
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 20px 0px;
+}
+
+h3 {
+  font-size: 18px;
+  margin-bottom: 1rem;
+}
+
+/* HEADER */
+
+.topBar {
+  height: 60px;
+}
+
+.topBarCenter {
+  width: 1200px;
+  margin: 0px auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.topBar img {
+  height: 70%;
+}
+
+.restoInfosCenter {
+  width: 1200px;
+  margin: 0px auto;
+  padding: 30px 0px;
+  display: flex;
+  gap: 40px;
+}
+
+.restoInfosCenter p {
+  font-size: 19px;
+  line-height: 30px;
+  color: #868a8a;
+}
+
+.restoInfosCenter > img {
+  width: 350px;
+  border-radius: 5px;
+}
+
+/* MAIN */
+
+main {
+  background-color: #f3f5f5;
+}
+
+.menu {
+  flex: 1 1;
+  margin-right: 30px;
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.meals {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+}
+
+.mealContainer {
+  display: flex;
+  width: 50%;
+
+  padding: 0 10px 25px;
+}
+
+.mealItem {
+  background-color: white;
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  padding: 15px;
+  border-radius: 5px;
+  height: 160px;
+}
+
+.mealInfo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin-right: 15px;
+}
+
+.mealDescription {
+  font-size: 14px;
+  line-height: 1.3rem;
+  color: #808484;
+  overflow: hidden;
+  height: 2.6rem;
+  margin-bottom: 1rem;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 17px;
+}
+
+.popular {
+  font-size: 12px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  color: #fa7f00;
+}
+
+.popular i {
+  font-size: 18px;
+  margin-right: 5px;
+}
+
+.mealPicture {
+  height: 130px;
+  width: 130px;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.mealPicture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.basket {
+  width: 350px;
+}
