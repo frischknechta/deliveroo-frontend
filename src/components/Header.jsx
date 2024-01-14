@@ -1,10 +1,12 @@
+import logo from "../assets/img/logo-teal.svg";
+
 const Header = ({ data }) => {
   return (
     <>
       <header>
         <div className="topBar">
           <div className="topBarCenter">
-            <img src="src/assets/img/logo-teal.svg" alt="Deliveroo logo" />
+            <img src={logo} alt="Deliveroo logo" />
           </div>
         </div>
         <div className="restoInfos">
