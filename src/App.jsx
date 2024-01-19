@@ -44,7 +44,7 @@ function App() {
 
       <main>
         <div className="wrapper">
-          <div className="menu">
+          <div className={"menu"}>
             {data.categories.map((category) => {
               return category.meals.length > 0 ? (
                 <Category
