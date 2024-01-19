@@ -5,12 +5,12 @@ const Header = ({ data }) => {
     <>
       <header>
         <div className="topBar">
-          <div className="topBarCenter">
+          <div className="topBarCenter wrapper">
             <img src={logo} alt="Deliveroo logo" />
           </div>
         </div>
         <div className="restoInfos">
-          <div className="restoInfosCenter">
+          <div className="restoInfosCenter wrapper">
             <div>
               <h1>{data.restaurant.name}</h1>
               <p>{data.restaurant.description}</p>

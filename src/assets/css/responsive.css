@@ -1,0 +1,97 @@
+@media (max-width: 1200px) {
+  /* GENERAL */
+  .wrapper {
+    width: 96vw;
+  }
+
+  /* MAIN */
+
+  .meals {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+  }
+
+  .mealContainer {
+    display: flex;
+    width: 100%;
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 1000px) {
+  /* HEADER */
+
+  .topBar {
+    height: 40px;
+  }
+
+  .restoInfosCenter {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 40px;
+    padding: 0 0 20px;
+  }
+
+  .restoInfosCenter > img {
+    width: 100vw;
+    margin-left: -2vw;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 0;
+    overflow: hidden;
+  }
+
+  /* MAIN */
+
+  .menu {
+    width: 100%;
+    margin: 0;
+  }
+
+  .meals {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+  }
+
+  .mealContainer {
+    display: flex;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .mealItem:hover {
+    cursor: unset;
+    box-shadow: unset;
+  }
+
+  /* BASKET */
+
+  .basket {
+    display: none;
+  }
+
+  .basketBottom {
+    display: unset;
+  }
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-family: "Stratos Deliveroo Web";
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .restoInfosCenter p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #868a8a;
+  }
+}

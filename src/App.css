@@ -7,7 +7,7 @@ body {
 }
 
 .wrapper {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0px auto;
   display: flex;
 }
@@ -34,7 +34,6 @@ h3 {
 
 header {
   background-color: white;
-  min-width: 1200px;
 }
 
 .topBar {
@@ -42,8 +41,6 @@ header {
 }
 
 .topBarCenter {
-  width: 1200px;
-  margin: 0px auto;
   height: 100%;
   display: flex;
   align-items: center;
@@ -55,8 +52,6 @@ header {
 }
 
 .restoInfosCenter {
-  width: 1200px;
-  margin: 0px auto;
   padding: 30px 0px;
   display: flex;
   gap: 40px;
@@ -100,7 +95,6 @@ main {
 .mealContainer {
   display: flex;
   width: 50%;
-
   padding: 0 10px 25px;
 }
 
@@ -112,6 +106,11 @@ main {
   padding: 15px;
   border-radius: 5px;
   height: 160px;
+}
+
+.mealItem:hover {
+  cursor: pointer;
+  box-shadow: 0 22px 24px 0 rgba(46, 51, 51, 0.07);
 }
 
 .mealInfo {
@@ -165,6 +164,155 @@ main {
   object-fit: cover;
 }
 
+/* BASKET */
+
 .basket {
   width: 350px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 30px;
+  border-radius: 5px;
+  box-shadow: 0 22px 24px 0 rgba(46, 51, 51, 0.07);
+  position: sticky;
+  top: 30px;
+}
+
+.validateCart {
+  background-color: #2ccdbd;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 1rem;
+  font-size: inherit;
+  font-weight: bold;
+}
+
+.disabled {
+  background-color: #bac3c3;
+  color: #8b9a9b;
+  cursor: not-allowed;
+}
+
+.basketEmpty {
+  align-self: center;
+  padding: 3rem;
+  color: #868a8a;
+}
+
+.itemsList {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border-bottom: 1px solid #d1d7d7;
+  padding: 20px 0;
+}
+
+.item {
+  display: flex;
+}
+
+.item i {
+  color: #2ccdbd;
+}
+
+.counter {
+  display: flex;
+  align-items: flex-start;
+  gap: 3px;
+  margin-right: 5px;
+}
+
+.item .itemTitle {
+  flex: 1;
+}
+
+.subTotal {
+  border-bottom: 1px solid #d1d7d7;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 1rem 0;
+}
+
+.subTotal > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.right {
+  width: 85px;
+  text-align: right;
+}
+
+/* BASKET BOTTOM */
+
+.basketBottom {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.basketBottomContainer {
+  background-color: white;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 0.8rem 0;
+  position: fixed;
+  bottom: 0;
+  box-shadow: 0 -5px 20px rgba(46, 51, 51, 0.07);
+}
+
+.seeBasket {
+  background-color: #2ccdbd;
+  color: white;
+  width: 95%;
+  border: none;
+  border-radius: 5px;
+  padding: 0.8rem 1.5rem;
+  font-size: inherit;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.seeBasket > div {
+  background-color: #13b3a6;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+}
+
+.basketTopLine {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  padding-top: 1rem;
+}
+
+.basketBottomItems {
+  width: 90%;
 }
