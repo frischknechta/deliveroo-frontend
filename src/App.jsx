@@ -13,19 +13,11 @@ function App() {
   const [basket, setBasket] = useState([]);
   const [seeBasket, setSeeBasket] = useState(false);
 
-  // const handleAddBasket = (id) => {
-  //   console.log("Add to basket ===>>>", id);
-  //   const newTab = [data.categories];
-  //   console.log(newTab);
-  //   const meal = newTab.meals.findIndex((element) => element === id);
-  //   console.log("Meal to basket ===>>>", meal);
-  // };
-
   useEffect(() => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "https://site--deliveroo-backend--79sf29g9cmjg.code.run/"
+          "https://site--backend-tripadvisor-deliveroo--79sf29g9cmjg.code.run/deliveroo"
         );
         setData(response.data);
         setIsLoading(false);
